@@ -59,7 +59,7 @@ public class BookService implements IBookService {
 	public Book updateBook(int id, Book b) throws BookNotFoundException {
 		// TODO Auto-generated method stub
 		Book b1 = repo.findById(id).get();
-		System.out.println(b1+"**************");
+		System.out.println(b1+"*****************");
 		if(Objects.nonNull(b.getTitle()) && !"".equalsIgnoreCase(b.getTitle())){
 			
 				b1.setTitle(b.getTitle());
