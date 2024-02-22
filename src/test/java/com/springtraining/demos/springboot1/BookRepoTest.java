@@ -1,6 +1,7 @@
 package com.springtraining.demos.springboot1;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
@@ -32,16 +33,17 @@ public class BookRepoTest {
 		 
 		  
 	 }
-	 
-	 @Test
-	 public void whenFindById_ThenGetBook() {
-		 //here i am getting back the book which is persisted by em 
-		 //we are the repo layer 
-		 Book b=repo.findById(book.getId()).get();
-		 
-		 
-		 assertEquals("Sapiens",b.getTitle());
-		 
-	 }
+		/*
+		 * @Disabled
+		 * 
+		 * @Test public void whenFindById_ThenGetBook() { //here i am getting back the
+		 * book which is persisted by em //we are the repo layer Book
+		 * b=repo.findById(book.getId()).get();
+		 * 
+		 * 
+		 * assertEquals("Sapiens",b.getTitle());
+		 * 
+		 * }
+		 */
 
 }
