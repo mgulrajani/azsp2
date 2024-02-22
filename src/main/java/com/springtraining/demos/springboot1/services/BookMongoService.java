@@ -37,7 +37,7 @@ public class BookMongoService implements IBookService {
 
 	@Override
 	public Book findById(int id) throws BookNotFoundException {
-
+      System.out.println("in find by id");
 		Optional<Book> book = repo.findById(id);
 		if(!book.isPresent()) {
 			
