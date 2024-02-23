@@ -23,6 +23,7 @@ public class BookMongoService implements IBookService {
 	
 	@Override
 	public Book addBook(Book book) {
+		System.out.println("in add book of mongo service");
 		//book.setDateOfPublishing(LocalDate.now());
 		// TODO Auto-generated method stub
 		if (book.getDateOfPublishing() ==null) book.setDateOfPublishing(LocalDate.now());

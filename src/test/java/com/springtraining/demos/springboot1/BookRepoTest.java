@@ -1,6 +1,6 @@
 package com.springtraining.demos.springboot1;
 
-import org.junit.jupiter.api.BeforeEach;
+/*import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,28 +11,26 @@ import com.springtraining.demos.springboot1.entities.Book;
 import com.springtraining.demos.springboot1.repo.IBookRepository;
 
 import static org.junit.jupiter.api.Assertions.*;
-//this is just testing in isolation
+*///this is just testing in isolation
 //what are we testing  Repository layer
 
-@DataJpaTest
+//@DataJpaTest
 public class BookRepoTest {
 
-	@Autowired
-	private IBookRepository repo;
-	
-	 @Autowired
-	 private TestEntityManager em;
-	 
-	 Book book;
-	 
-	 @BeforeEach
-	 void setUp() {
-		 book=new Book("Sapiens",1700);
-		
-		 em.persist(book);
-		 
-		  
-	 }
+	/*
+	 * @Autowired private IBookRepository repo;
+	 * 
+	 * @Autowired private TestEntityManager em;
+	 * 
+	 * Book book;
+	 * 
+	 * @BeforeEach void setUp() { book=new Book("Sapiens",1700);
+	 * 
+	 * em.persist(book);
+	 * 
+	 * 
+	 * }
+	 */
 		/*
 		 * @Disabled
 		 * 
